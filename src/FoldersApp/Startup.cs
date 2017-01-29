@@ -13,6 +13,7 @@ using FoldersApp.Core.Filters;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using FoldersApp.Services;
+using Newtonsoft.Json.Converters;
 
 namespace FoldersApp
 {
@@ -23,15 +24,19 @@ namespace FoldersApp
             services.AddMvc(c =>
             {
                 c.Filters.Add(typeof(MyExceptionFilter));
+            }).AddJsonOptions(c =>
+            {
+                c.SerializerSettings.Converters.Add(new StringEnumConverter());
             });
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "FileSystem API", Version = "v1" });
             });
 
-            var connection = @"Server=(localdb)\mssqllocaldb;Database=EFGetStarted.AspNetCore.NewDb6;Trusted_Connection=True;";
-            services.AddDbContext<FoldersContext>(options => {
-                options.UseSqlServer(connection);
+            services.AddDbContext<FoldersContext>(options =>
+            {
+                options.UseSqlite("Filename=MyDatabase.db");
             });
 
             services.AddTransient<IFoldersRepository, FoldersRepository>();

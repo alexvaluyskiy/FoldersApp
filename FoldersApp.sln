@@ -7,11 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0E8915A0-1CE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoldersApp", "src\FoldersApp\FoldersApp.csproj", "{99BA9F22-9347-4D6C-92BF-CB32A8F54ABB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BBEDD757-AE50-4BE2-B822-FE433F78D195}"
-	ProjectSection(SolutionItems) = preProject
-		docker-compose.ci.build.yml = docker-compose.ci.build.yml
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9E13DA07-C74B-412F-B3F4-EC23996BAF36}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoldersApp.Tests", "test\FoldersApp.Tests\FoldersApp.Tests.csproj", "{04C8364D-6FE7-485C-9AC7-57FFCE525135}"
