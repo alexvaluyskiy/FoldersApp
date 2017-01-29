@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  foldersapp:
+    image: foldersapp
+    build:
+      context: .
+      dockerfile: Dockerfile

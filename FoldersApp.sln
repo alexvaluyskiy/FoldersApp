@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26124.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0E8915A0-1CEB-48D4-8ACD-EEE3D9B74AFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoldersApp", "src\FoldersApp\FoldersApp.csproj", "{99BA9F22-9347-4D6C-92BF-CB32A8F54ABB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BBEDD757-AE50-4BE2-B822-FE433F78D195}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.ci.build.yml = docker-compose.ci.build.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9E13DA07-C74B-412F-B3F4-EC23996BAF36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoldersApp.Tests", "test\FoldersApp.Tests\FoldersApp.Tests.csproj", "{04C8364D-6FE7-485C-9AC7-57FFCE525135}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99BA9F22-9347-4D6C-92BF-CB32A8F54ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99BA9F22-9347-4D6C-92BF-CB32A8F54ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99BA9F22-9347-4D6C-92BF-CB32A8F54ABB}.Debug|x64.ActiveCfg = Debug|x64
+		{99BA9F22-9347-4D6C-92BF-CB32A8F54ABB}.Debug|x64.Build.0 = Debug|x64
+		{99BA9F22-9347-4D6C-92BF-CB32A8F54ABB}.Debug|x86.ActiveCfg = Debug|x86
+		{99BA9F22-9347-4D6C-92BF-CB32A8F54ABB}.Debug|x86.Build.0 = Debug|x86
+		{99BA9F22-9347-4D6C-92BF-CB32A8F54ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99BA9F22-9347-4D6C-92BF-CB32A8F54ABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99BA9F22-9347-4D6C-92BF-CB32A8F54ABB}.Release|x64.ActiveCfg = Release|x64
+		{99BA9F22-9347-4D6C-92BF-CB32A8F54ABB}.Release|x64.Build.0 = Release|x64
+		{99BA9F22-9347-4D6C-92BF-CB32A8F54ABB}.Release|x86.ActiveCfg = Release|x86
+		{99BA9F22-9347-4D6C-92BF-CB32A8F54ABB}.Release|x86.Build.0 = Release|x86
+		{04C8364D-6FE7-485C-9AC7-57FFCE525135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04C8364D-6FE7-485C-9AC7-57FFCE525135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04C8364D-6FE7-485C-9AC7-57FFCE525135}.Debug|x64.ActiveCfg = Debug|x64
+		{04C8364D-6FE7-485C-9AC7-57FFCE525135}.Debug|x64.Build.0 = Debug|x64
+		{04C8364D-6FE7-485C-9AC7-57FFCE525135}.Debug|x86.ActiveCfg = Debug|x86
+		{04C8364D-6FE7-485C-9AC7-57FFCE525135}.Debug|x86.Build.0 = Debug|x86
+		{04C8364D-6FE7-485C-9AC7-57FFCE525135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04C8364D-6FE7-485C-9AC7-57FFCE525135}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04C8364D-6FE7-485C-9AC7-57FFCE525135}.Release|x64.ActiveCfg = Release|x64
+		{04C8364D-6FE7-485C-9AC7-57FFCE525135}.Release|x64.Build.0 = Release|x64
+		{04C8364D-6FE7-485C-9AC7-57FFCE525135}.Release|x86.ActiveCfg = Release|x86
+		{04C8364D-6FE7-485C-9AC7-57FFCE525135}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{99BA9F22-9347-4D6C-92BF-CB32A8F54ABB} = {0E8915A0-1CEB-48D4-8ACD-EEE3D9B74AFD}
+		{04C8364D-6FE7-485C-9AC7-57FFCE525135} = {9E13DA07-C74B-412F-B3F4-EC23996BAF36}
+	EndGlobalSection
+EndGlobal
