@@ -1,8 +1,10 @@
 version: '2'
 
 services:
-  foldersapp:
+  folderapp:
     image: foldersapp
     build:
       context: .
       dockerfile: Dockerfile
+    ports:
+     - "5000:5000"
