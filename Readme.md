@@ -19,22 +19,28 @@ API for working with nested hierarchy of files and folders.
 
 ### Windows
 1) Open Powershell
+
 2) Enter "./build.ps1 Run"
 
 ### Linux
 1) Open terminal
+
 2) Enter "./build.sh Run"
 
 ### Linux Docker
 1) Install Docker Engine
+
 2) Install Docker Compose
+
 3) Enter "sudo docker-compose up"
 
 ## How to run tests
 ### Windows
 1) Open Powershell
+
 2) Enter "./build.ps1 RunTests"
 
 ### Linux
 1) Open terminal
+
 2) Enter "./build.sh RunTests"
