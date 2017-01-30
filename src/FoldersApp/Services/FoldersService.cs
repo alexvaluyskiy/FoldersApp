@@ -20,13 +20,31 @@ namespace FoldersApp.Services
         public async Task<List<FolderTreeItem>> GetFolder(string path)
         {
             // Check the path if exists
-            var item = await _foldersRepository.GetFileSystemItemByPath(path);
+            var pathItem = await _foldersRepository.GetFileSystemItemByPath(path);
+            bool isPathExists = string.IsNullOrEmpty(path) ? true : pathItem != null;
+
+            if (!isPathExists)
+            {
+                throw new FileNotFoundException(path);
+            }
 
             // Check that a folder is not already exists
-
             var list = await _foldersRepository.GetFolder(path);
 
-            var tree = GenerateTree(list, item?.Id);
+            List<FolderTreeItem> tree;
+
+            if (list.Count == 1 && list[0].Type == FileSystemType.File)
+            {
+                list[0].ParentId = null;
+                tree = GenerateTree(list, null);
+            }
+            else
+            {
+                tree = GenerateTree(list, pathItem?.Id);
+            }
+
+            if (tree == null)
+                return new List<FolderTreeItem>();
 
             return tree;
         }
